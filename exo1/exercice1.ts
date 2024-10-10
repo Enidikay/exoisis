@@ -111,3 +111,24 @@ function delta(a:number, b:number, c:number):number{
 }
 
 console.log(delta(5,10,3));
+
+/*j. Écrire une fonction root qui prend trois coefficients a, b et c et qui, en utilisant la fonction
+delta détermine s’il existe une racine au polynôme associé.*/
+
+function root (a:number, b:number, c:number):number[]{
+    let del:number = delta(a,b,c);
+    let tab:number[] = [];
+    
+    if (del < 0){
+        tab = []
+    }
+    if (del == 0){
+        tab = [-b/2+a]
+    }
+    if (del > 0){
+        tab = [-b-Math.sqrt(del)/2+a , -b+Math.sqrt(del)/2+a]
+    }
+
+    return tab;
+}
+console.log(root(10,2,5))

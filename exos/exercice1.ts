@@ -95,7 +95,7 @@ function is_leap(year:number):boolean{
     }
 }
 
-console.log(is_leap(2024));
+console.log(is_leap(1900));
 
 
 /*i. Écrire une fonction delta qui prend trois coefficients a, b et c et qui calcul le coefficient delta

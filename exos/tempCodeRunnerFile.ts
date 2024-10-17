@@ -1,2 +1,1 @@
-
-console.log(delta(5,10,3));
+star
